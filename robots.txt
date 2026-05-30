@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://TU-USUARIO.github.io/studytools/sitemap.xml
+Sitemap: https://sergii1332.github.io/studytools/sitemap.xml
