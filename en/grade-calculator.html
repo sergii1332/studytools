@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator - StudyTools</title>
+  <meta name="description" content="Free grade calculator to calculate your average grade online.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Grade Calculator</h1>
+  <p>Calculate your average grade for free</p>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Enter your grades</h2>
+
+    <div id="grades-container">
+      <input type="number" class="grade-input" placeholder="Grade">
+    </div>
+
+    <br>
+
+    <button onclick="addGradeInput()">Add another grade</button>
+    <button onclick="calculateAverage()">Calculate</button>
+
+    <br><br>
+
+    <h2 id="average-result"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

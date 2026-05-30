@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weighted Grade Calculator</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+<h1>Weighted Grade Calculator</h1>
+<p>Calculate weighted averages easily</p>
+</header>
+
+<main class="container">
+
+<div class="card">
+
+<h2>Grade 1</h2>
+<input type="number" id="grade1" placeholder="Grade">
+<input type="number" id="weight1" placeholder="Weight %">
+
+<br><br>
+
+<h2>Grade 2</h2>
+<input type="number" id="grade2" placeholder="Grade">
+<input type="number" id="weight2" placeholder="Weight %">
+
+<br><br>
+
+<button onclick="calculateWeightedGrade()">
+Calculate
+</button>
+
+<br><br>
+
+<h2 id="weighted-result"></h2>
+
+</div>
+
+</main>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Notas - StudyTools</title>
+  <meta name="description" content="Calculadora gratuita para calcular tu nota media online.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Calculadora de Notas</h1>
+  <p>Calcula tu nota media gratis</p>
+</header>
+<div class="container">
+  <a href="../index.html">🏠 Inicio</a>
+</div>
+
+<main class="container">
+  <div class="card">
+    <h2>Introduce tus notas</h2>
+
+    <div id="grades-container">
+      <input type="number" class="grade-input" placeholder="Nota">
+    </div>
+
+    <br>
+
+    <button onclick="addGradeInputSpanish()">Añadir otra nota</button>
+    <button onclick="calculateAverageSpanish()">Calcular</button>
+
+    <br><br>
+
+    <h2 id="average-result"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

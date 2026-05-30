@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA Calculator - StudyTools</title>
+  <meta name="description" content="Free GPA calculator for students. Calculate your GPA quickly online.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>GPA Calculator</h1>
+  <p>Calculate your GPA quickly</p>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Enter your grades</h2>
+
+    <div id="gpa-container">
+      <input type="number" class="gpa-input" placeholder="Grade points (0-4)">
+    </div>
+
+    <br>
+
+    <button onclick="addGpaInput()">Add another class</button>
+    <button onclick="calculateGpa()">Calculate GPA</button>
+
+    <br><br>
+
+    <h2 id="gpa-result"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

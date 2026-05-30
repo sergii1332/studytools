@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Grade Calculator - StudyTools</title>
+  <meta name="description" content="Calculate the grade you need on your final exam to reach your desired final grade.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Final Grade Calculator</h1>
+  <p>Find out what score you need on your final exam</p>
+</header>
+
+<div class="container">
+  <a href="../index.html">🏠 Home</a>
+</div>
+
+<main class="container">
+  <div class="card">
+    <h2>Enter your information</h2>
+
+    <input type="number" id="current-grade" placeholder="Current grade">
+    <br><br>
+
+    <input type="number" id="final-weight" placeholder="Final exam weight (%)">
+    <br><br>
+
+    <input type="number" id="desired-grade" placeholder="Desired final grade">
+    <br><br>
+
+    <button onclick="calculateFinalGrade()">Calculate</button>
+
+    <br><br>
+
+    <h2 id="final-grade-result"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

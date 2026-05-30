@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Ponderada - StudyTools</title>
+  <meta name="description" content="Calcula tu nota media ponderada online de forma gratuita.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Calculadora Ponderada</h1>
+  <p>Calcula medias ponderadas fácilmente</p>
+</header>
+
+<main class="container">
+  <div class="card">
+
+    <h2>Nota 1</h2>
+    <input type="number" id="grade1-es" placeholder="Nota">
+    <input type="number" id="weight1-es" placeholder="Peso %">
+
+    <br><br>
+
+    <h2>Nota 2</h2>
+    <input type="number" id="grade2-es" placeholder="Nota">
+    <input type="number" id="weight2-es" placeholder="Peso %">
+
+    <br><br>
+
+    <button onclick="calculateWeightedGradeSpanish()">Calcular</button>
+
+    <br><br>
+
+    <h2 id="weighted-result-es"></h2>
+
+  </div>
+</main>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
