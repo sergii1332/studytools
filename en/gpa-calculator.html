@@ -8,7 +8,7 @@
 
   <title>GPA Calculator - Free Online GPA Calculator</title>
 
-  <meta name="description" content="Free GPA calculator for students. Calculate your GPA online using a 4.0 scale quickly and accurately.">
+  <meta name="description" content="Calculate your GPA instantly with our free GPA calculator. Easy to use for high school, college and university students using the 4.0 GPA scale.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,50 +19,121 @@
 
 <body>
 
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../all-tools.html">All Tools</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../privacy-policy.html">Privacy</a>
+</nav>
+
 <header class="header">
   <h1>GPA Calculator</h1>
-  <p>Calculate your GPA quickly</p>
+  <p>Calculate your GPA quickly and accurately.</p>
 </header>
 
 <main class="container">
   <div class="card">
-    <h2>Enter your grades</h2>
+
+    <h2>Enter Your Grades</h2>
 
     <div id="gpa-container">
-      <input type="number" class="gpa-input" placeholder="Grade points (0-4)">
+      <input type="number" class="gpa-input" placeholder="Grade points (0-4)" min="0" max="4" step="0.1">
     </div>
 
     <br>
 
-    <button onclick="addGpaInput()">Add another class</button>
+    <button onclick="addGpaInput()">Add Another Class</button>
     <button onclick="calculateGpa()">Calculate GPA</button>
 
     <br><br>
 
     <h2 id="gpa-result"></h2>
+
   </div>
 </main>
+
 <section class="card">
+
   <h2>How to Use the GPA Calculator</h2>
 
   <p>
-    Enter the grade points for each class and click Calculate GPA.
-    The calculator will automatically compute your average GPA.
-  </p>
-
-  <p>
-    This free GPA calculator uses the standard 4.0 GPA scale and is useful
-    for high school, college and university students.
+    Enter the grade points for each course and click Calculate GPA. The
+    calculator will automatically compute your average Grade Point Average.
   </p>
 
   <h2>What Is GPA?</h2>
 
   <p>
-    GPA stands for Grade Point Average. It is a common academic measurement
-    used by schools, colleges and universities to evaluate student performance.
+    GPA stands for Grade Point Average. It is one of the most common academic
+    measurements used by schools, colleges and universities to evaluate student
+    performance.
   </p>
+
+  <h2>GPA Formula</h2>
+
+  <p>
+    GPA = Total Grade Points ÷ Number of Courses
+  </p>
+
+  <h2>Example GPA Calculation</h2>
+
+  <p>
+    Suppose you received the following grade points:
+  </p>
+
+  <ul>
+    <li>Course 1: 4.0</li>
+    <li>Course 2: 3.5</li>
+    <li>Course 3: 3.0</li>
+    <li>Course 4: 4.0</li>
+  </ul>
+
+  <p>
+    GPA = (4.0 + 3.5 + 3.0 + 4.0) ÷ 4 = 3.63
+  </p>
+
+  <h2>Why GPA Matters</h2>
+
+  <p>
+    GPA is often used for college admissions, scholarships, academic awards
+    and graduation requirements. Maintaining a strong GPA can improve future
+    educational and career opportunities.
+  </p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>What is a good GPA?</h3>
+
+  <p>
+    A GPA above 3.0 is generally considered good, while a GPA above 3.5 is
+    often considered excellent.
+  </p>
+
+  <h3>Does this calculator use a 4.0 scale?</h3>
+
+  <p>
+    Yes. This GPA calculator is designed for the standard 4.0 GPA scale.
+  </p>
+
+  <h3>Can I calculate college and high school GPA?</h3>
+
+  <p>
+    Yes. The calculator can be used for both high school and college courses.
+  </p>
+
+  <h2>Related Tools</h2>
+
+  <p>
+    <a href="grade-calculator.html">Grade Calculator</a> |
+    <a href="final-grade-calculator.html">Final Grade Calculator</a> |
+    <a href="average-calculator.html">Average Calculator</a> |
+    <a href="exam-score-calculator.html">Exam Score Calculator</a>
+  </p>
+
 </section>
 
 <script src="../script.js"></script>
+
 </body>
 </html>
