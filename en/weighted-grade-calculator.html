@@ -8,7 +8,7 @@
 
   <title>Weighted Grade Calculator - Free Online Weighted Average Calculator</title>
 
-  <meta name="description" content="Free weighted grade calculator. Calculate weighted averages and final grades using percentage weights quickly and accurately.">
+  <meta name="description" content="Calculate weighted grades and weighted averages instantly. Free online weighted grade calculator for assignments, exams, quizzes and course grades.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,68 +19,138 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../all-tools.html">All Tools</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../privacy-policy.html">Privacy</a>
+</nav>
+
 <header class="header">
-<h1>Weighted Grade Calculator</h1>
-<p>Calculate weighted averages easily</p>
+  <h1>Weighted Grade Calculator</h1>
+  <p>Calculate weighted averages and final grades instantly.</p>
 </header>
 
 <main class="container">
 
-<div class="card">
+  <div class="card">
 
-<h2>Grade 1</h2>
-<input type="number" id="grade1" placeholder="Grade">
-<input type="number" id="weight1" placeholder="Weight %">
+    <h2>Grade 1</h2>
+    <input type="number" id="grade1" placeholder="Grade">
+    <input type="number" id="weight1" placeholder="Weight %">
 
-<br><br>
+    <br><br>
 
-<h2>Grade 2</h2>
-<input type="number" id="grade2" placeholder="Grade">
-<input type="number" id="weight2" placeholder="Weight %">
+    <h2>Grade 2</h2>
+    <input type="number" id="grade2" placeholder="Grade">
+    <input type="number" id="weight2" placeholder="Weight %">
 
-<br><br>
+    <br><br>
 
-<button onclick="calculateWeightedGrade()">
-Calculate
-</button>
+    <button onclick="calculateWeightedGrade()">
+      Calculate
+    </button>
 
-<br><br>
+    <br><br>
 
-<h2 id="weighted-result"></h2>
+    <h2 id="weighted-result"></h2>
 
-</div>
+  </div>
 
 </main>
+
 <section class="card">
+
   <h2>How to Use the Weighted Grade Calculator</h2>
 
   <p>
     Enter each grade and its corresponding weight percentage. The calculator
-    will automatically compute your weighted average grade.
-  </p>
-
-  <p>
-    This free weighted grade calculator is useful for students whose courses
-    use different percentages for assignments, projects, quizzes and exams.
+    automatically computes your weighted average grade.
   </p>
 
   <h2>What Is a Weighted Grade?</h2>
 
   <p>
-    A weighted grade gives different importance to different assignments.
-    For example, a final exam may count for 40% of the course grade while
-    homework counts for 20%.
+    A weighted grade assigns different levels of importance to assignments,
+    projects, quizzes and exams. Higher-weighted assessments contribute more
+    to the final course grade.
   </p>
 
   <h2>Weighted Grade Formula</h2>
 
   <p>
-    A weighted average is calculated by multiplying each grade by its weight,
-    adding the results together and dividing by the total weight.
+    Weighted Grade = (Grade × Weight) + (Grade × Weight) + ...
   </p>
+
+  <h2>Example Calculation</h2>
+
+  <p>
+    Suppose:
+  </p>
+
+  <ul>
+    <li>Assignment Grade: 90 (40%)</li>
+    <li>Final Exam Grade: 80 (60%)</li>
+  </ul>
+
+  <p>
+    Weighted Grade = (90 × 0.40) + (80 × 0.60)
+  </p>
+
+  <p>
+    Weighted Grade = 36 + 48 = 84
+  </p>
+
+  <p>
+    Your weighted course grade would be 84%.
+  </p>
+
+  <h2>Why Weighted Grades Matter</h2>
+
+  <p>
+    Many schools, colleges and universities use weighted grading systems.
+    Understanding weighted averages helps students track performance and
+    determine how important future assignments and exams will be.
+  </p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>What is a weighted average?</h3>
+
+  <p>
+    A weighted average gives more importance to certain grades based on their
+    percentage contribution to the final grade.
+  </p>
+
+  <h3>Do the weights need to total 100%?</h3>
+
+  <p>
+    Yes. For the most accurate result, all assignment and exam weights should
+    add up to 100%.
+  </p>
+
+  <h3>Can I use this calculator for college courses?</h3>
+
+  <p>
+    Yes. It works for high school, college and university grading systems.
+  </p>
+
+  <h2>Related Tools</h2>
+
+  <p>
+    <a href="grade-calculator.html">Grade Calculator</a> |
+    <a href="gpa-calculator.html">GPA Calculator</a> |
+    <a href="final-grade-calculator.html">Final Grade Calculator</a> |
+    <a href="exam-score-calculator.html">Exam Score Calculator</a> |
+    <a href="average-calculator.html">Average Calculator</a>
+  </p>
+
 </section>
+
 <script src="../script.js"></script>
 
 </body>
