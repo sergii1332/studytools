@@ -8,7 +8,7 @@
 
   <title>Calculadora de Nota Necesaria - Calcula Qué Nota Necesitas</title>
 
-  <meta name="description" content="Calculadora gratuita de nota necesaria. Descubre qué nota necesitas en tu examen final para alcanzar tu nota objetivo.">
+  <meta name="description" content="Calcula qué nota necesitas en el examen final para alcanzar tu nota objetivo. Calculadora gratuita para estudiantes.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,43 +19,36 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
+
+<nav class="navbar">
+  <a href="../index.html">Inicio</a>
+  <a href="../all-tools.html">Todas las herramientas</a>
+  <a href="../about.html">Acerca de</a>
+  <a href="../contact.html">Contacto</a>
+  <a href="../privacy-policy.html">Privacidad</a>
+</nav>
 
 <header class="header">
   <h1>Calculadora de Nota Necesaria</h1>
-  <p>Descubre qué nota necesitas en el examen final</p>
+  <p>Descubre qué nota necesitas en el examen final.</p>
 </header>
-
-<div class="container">
-  <a href="../index.html">🏠 Inicio</a>
-</div>
 
 <main class="container">
   <div class="card">
 
     <h2>Introduce tus datos</h2>
 
-    <input
-      type="number"
-      id="current-grade-es"
-      placeholder="Nota actual"
-    >
+    <input type="number" id="current-grade-es" placeholder="Nota actual (%)">
 
     <br><br>
 
-    <input
-      type="number"
-      id="final-weight-es"
-      placeholder="Peso del examen final (%)"
-    >
+    <input type="number" id="final-weight-es" placeholder="Peso del examen final (%)">
 
     <br><br>
 
-    <input
-      type="number"
-      id="desired-grade-es"
-      placeholder="Nota final deseada"
-    >
+    <input type="number" id="desired-grade-es" placeholder="Nota final deseada (%)">
 
     <br><br>
 
@@ -69,26 +62,76 @@
 
   </div>
 </main>
+
 <section class="card">
   <h2>Cómo usar la Calculadora de Nota Necesaria</h2>
 
   <p>
     Introduce tu nota actual, el porcentaje que vale el examen final y la nota
-    final que deseas obtener. La calculadora mostrará la nota mínima que necesitas.
+    final que deseas obtener. La calculadora mostrará la nota mínima que
+    necesitas sacar en el examen final.
+  </p>
+
+  <h2>Fórmula de la nota necesaria</h2>
+
+  <p>
+    Nota necesaria = (Nota objetivo - Nota actual × Peso actual) ÷ Peso del examen final
+  </p>
+
+  <h2>Ejemplo de cálculo</h2>
+
+  <p>
+    Si tu nota actual es 80%, el examen final vale un 20% y quieres terminar
+    con una nota final de 85%, la calculadora estima qué nota necesitas en el
+    examen final.
   </p>
 
   <p>
-    Esta herramienta es útil para estudiantes que quieren planificar sus estudios
-    y saber qué resultado necesitan para aprobar o alcanzar una nota concreta.
+    Nota necesaria = (85 - 80 × 0.80) ÷ 0.20 = 105%
   </p>
 
-  <h2>¿Cómo se calcula la nota necesaria?</h2>
+  <p>
+    En este caso necesitarías un 105%, lo que significa que esa nota objetivo
+    no sería posible salvo que exista crédito extra o ajustes en la evaluación.
+  </p>
+
+  <h2>¿Para qué sirve esta calculadora?</h2>
 
   <p>
-    El cálculo tiene en cuenta tu nota actual, el peso del examen final y la
-    nota objetivo para determinar la puntuación requerida en el examen.
+    Esta herramienta ayuda a estudiantes a planificar sus estudios, saber si
+    todavía pueden alcanzar una nota concreta y entender cuánto influye el
+    examen final en la calificación total.
+  </p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Qué significa el peso del examen final?</h3>
+  <p>
+    Es el porcentaje de la nota total que depende del examen final.
+  </p>
+
+  <h3>¿Puedo usarla para saber si apruebo?</h3>
+  <p>
+    Sí. Introduce como nota objetivo la nota mínima para aprobar y la
+    calculadora mostrará qué resultado necesitas.
+  </p>
+
+  <h3>¿Qué pasa si necesito más de 100%?</h3>
+  <p>
+    Normalmente significa que la nota objetivo no es posible sin puntos extra
+    o cambios en la evaluación.
+  </p>
+
+  <h2>Herramientas relacionadas</h2>
+
+  <p>
+    <a href="calculadora-nota-examen.html">Calculadora de Nota de Examen</a> |
+    <a href="calculadora-media.html">Calculadora de Media</a> |
+    <a href="calculadora-gpa.html">Calculadora GPA</a> |
+    <a href="calculadora-ponderada.html">Calculadora Ponderada</a>
   </p>
 </section>
+
 <script src="../script.js"></script>
 
 </body>
