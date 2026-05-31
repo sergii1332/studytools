@@ -183,3 +183,14 @@ a {
   transform: translateY(-5px);
   transition: 0.2s;
 }
+
+.hero {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.hero p {
+  margin-bottom: 8px;
+}
