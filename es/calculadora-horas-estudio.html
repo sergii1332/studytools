@@ -8,7 +8,7 @@
 
   <title>Calculadora de Horas de Estudio - Planificador de Estudio Gratis</title>
 
-  <meta name="description" content="Calculadora gratuita de horas de estudio. Estima cuántas horas debes estudiar cada semana según tus asignaturas y carga académica.">
+  <meta name="description" content="Calcula cuántas horas deberías estudiar cada semana con esta calculadora gratuita. Organiza mejor tu tiempo y mejora tu planificación académica.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,55 +19,124 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
+<nav class="navbar">
+  <a href="../index.html">Inicio</a>
+  <a href="../all-tools.html">Todas las herramientas</a>
+  <a href="../about.html">Acerca de</a>
+  <a href="../contact.html">Contacto</a>
+  <a href="../privacy-policy.html">Privacidad</a>
+</nav>
+
 <header class="header">
-<h1>Calculadora de Horas de Estudio</h1>
-<p>Calcula tus horas semanales de estudio</p>
+  <h1>Calculadora de Horas de Estudio</h1>
+  <p>Calcula y organiza tu tiempo de estudio semanal.</p>
 </header>
 
 <main class="container">
-<div class="card">
 
-<h2>Asignaturas</h2>
-<input type="number" id="subjects-es" placeholder="Número de asignaturas">
+  <div class="card">
 
-<br><br>
+    <h2>Introduce tus datos</h2>
 
-<h2>Horas por asignatura a la semana</h2>
-<input type="number" id="hours-es" placeholder="Horas">
+    <input type="number" id="subjects-es" placeholder="Número de asignaturas">
 
-<br><br>
+    <br><br>
 
-<button onclick="calculateStudyHoursSpanish()">Calcular</button>
+    <input type="number" id="hours-es" placeholder="Horas por asignatura">
 
-<br><br>
+    <br><br>
 
-<h2 id="study-result-es"></h2>
+    <button onclick="calculateStudyHoursSpanish()">
+      Calcular
+    </button>
 
-</div>
+    <br><br>
+
+    <h2 id="study-result-es"></h2>
+
+  </div>
+
 </main>
+
 <section class="card">
+
   <h2>Cómo usar la Calculadora de Horas de Estudio</h2>
 
   <p>
-    Introduce el número de asignaturas que cursas y las horas de estudio
-    recomendadas para cada una. La calculadora estimará tu tiempo total
-    de estudio semanal.
+    Introduce el número de asignaturas que cursas y las horas de estudio que
+    planeas dedicar a cada una. La calculadora estimará automáticamente tu
+    tiempo total de estudio semanal.
+  </p>
+
+  <h2>Fórmula utilizada</h2>
+
+  <p>
+    Horas totales de estudio = Número de asignaturas × Horas por asignatura
+  </p>
+
+  <h2>Ejemplo de cálculo</h2>
+
+  <p>
+    Si cursas 5 asignaturas y estudias 3 horas semanales por cada una:
   </p>
 
   <p>
-    Esta herramienta gratuita ayuda a estudiantes a organizar mejor su
-    tiempo, planificar horarios y gestionar la carga académica.
+    5 × 3 = 15 horas de estudio por semana
   </p>
 
   <h2>¿Por qué es importante planificar el estudio?</h2>
 
   <p>
-    Una buena planificación ayuda a mejorar el rendimiento académico,
-    reducir el estrés y preparar exámenes y trabajos con mayor eficacia.
+    Una buena planificación permite distribuir mejor el tiempo, reducir el
+    estrés y mejorar el rendimiento académico. Además, ayuda a preparar
+    exámenes, trabajos y proyectos con mayor eficacia.
   </p>
+
+  <h2>Consejos para organizar el tiempo de estudio</h2>
+
+  <ul>
+    <li>Divide el estudio en sesiones más cortas y frecuentes.</li>
+    <li>Prioriza las asignaturas más difíciles.</li>
+    <li>Establece objetivos semanales realistas.</li>
+    <li>Evita dejar todo para el último momento.</li>
+  </ul>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Cuántas horas debería estudiar a la semana?</h3>
+
+  <p>
+    Depende de la dificultad de las asignaturas, la carga académica y tus
+    objetivos personales.
+  </p>
+
+  <h3>¿Sirve para estudiantes universitarios?</h3>
+
+  <p>
+    Sí. La calculadora puede utilizarse tanto en secundaria como en universidad.
+  </p>
+
+  <h3>¿Es gratuita?</h3>
+
+  <p>
+    Sí. Todas las herramientas de StudyTools son completamente gratuitas.
+  </p>
+
+  <h2>Herramientas relacionadas</h2>
+
+  <p>
+    <a href="calculadora-media.html">Calculadora de Media</a> |
+    <a href="calculadora-gpa.html">Calculadora GPA</a> |
+    <a href="calculadora-nota-examen.html">Calculadora de Nota de Examen</a> |
+    <a href="calculadora-ponderada.html">Calculadora Ponderada</a>
+  </p>
+
 </section>
+
 <script src="../script.js"></script>
+
 </body>
 </html>
