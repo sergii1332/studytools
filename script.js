@@ -308,3 +308,109 @@ function calculateWeightedGradeSpanish() {
   result.textContent =
     "Nota ponderada: " + weightedAverage.toFixed(2);
 }
+
+function calculateExamScore() {
+  const correct = parseFloat(document.getElementById("exam-correct").value);
+  const total = parseFloat(document.getElementById("exam-total").value);
+
+  const result = document.getElementById("exam-score-result");
+
+  if (isNaN(correct) || isNaN(total) || total <= 0 || correct < 0 || correct > total) {
+    result.textContent = "Please enter valid values.";
+    return;
+  }
+
+  const percentage = (correct / total) * 100;
+
+  result.textContent = "Exam Score: " + percentage.toFixed(2) + "%";
+}
+
+function calculateExamScoreSpanish() {
+  const correct = parseFloat(document.getElementById("exam-correct-es").value);
+  const total = parseFloat(document.getElementById("exam-total-es").value);
+
+  const result = document.getElementById("exam-score-result-es");
+
+  if (isNaN(correct) || isNaN(total) || total <= 0 || correct < 0 || correct > total) {
+    result.textContent = "Por favor, introduce valores válidos.";
+    return;
+  }
+
+  const percentage = (correct / total) * 100;
+
+  result.textContent = "Nota del examen: " + percentage.toFixed(2) + "%";
+}
+
+function addAverageInput() {
+  const container = document.getElementById("average-container");
+
+  const input = document.createElement("input");
+  input.type = "number";
+  input.className = "average-input";
+  input.placeholder = "Number";
+
+  container.appendChild(input);
+}
+
+function calculateAverageTool() {
+  const inputs = document.querySelectorAll(".average-input");
+
+  let total = 0;
+  let count = 0;
+
+  inputs.forEach(input => {
+    const value = parseFloat(input.value);
+
+    if (!isNaN(value)) {
+      total += value;
+      count++;
+    }
+  });
+
+  const result = document.getElementById("average-tool-result");
+
+  if (count === 0) {
+    result.textContent = "Please enter at least one number.";
+    return;
+  }
+
+  result.textContent =
+    "Average: " + (total / count).toFixed(2);
+}
+
+function addAverageInputSpanish() {
+  const container = document.getElementById("average-container-es");
+
+  const input = document.createElement("input");
+  input.type = "number";
+  input.className = "average-input-es";
+  input.placeholder = "Número";
+
+  container.appendChild(input);
+}
+
+function calculateAverageToolSpanish() {
+  const inputs = document.querySelectorAll(".average-input-es");
+
+  let total = 0;
+  let count = 0;
+
+  inputs.forEach(input => {
+    const value = parseFloat(input.value);
+
+    if (!isNaN(value)) {
+      total += value;
+      count++;
+    }
+  });
+
+  const result = document.getElementById("average-tool-result-es");
+
+  if (count === 0) {
+    result.textContent = "Introduce al menos un número.";
+    return;
+  }
+
+  result.textContent =
+    "Media: " + (total / count).toFixed(2);
+}

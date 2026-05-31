@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Score Calculator - StudyTools</title>
+  <meta name="description" content="Free exam score calculator. Calculate your test percentage based on correct answers and total questions.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+<header class="header">
+  <h1>Exam Score Calculator</h1>
+  <p>Calculate your exam percentage instantly</p>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Enter your exam results</h2>
+
+    <input type="number" id="exam-correct" placeholder="Correct answers">
+    <br><br>
+
+    <input type="number" id="exam-total" placeholder="Total questions">
+    <br><br>
+
+    <button onclick="calculateExamScore()">Calculate</button>
+
+    <br><br>
+
+    <h2 id="exam-score-result"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>

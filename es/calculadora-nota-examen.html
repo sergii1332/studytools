@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Nota de Examen - StudyTools</title>
+  <meta name="description" content="Calculadora gratuita para calcular la nota de un examen según las respuestas correctas y el total de preguntas.">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+
+<header class="header">
+  <h1>Calculadora de Nota de Examen</h1>
+  <p>Calcula tu porcentaje del examen al instante</p>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h2>Introduce los resultados</h2>
+
+    <input type="number" id="exam-correct-es" placeholder="Respuestas correctas">
+    <br><br>
+
+    <input type="number" id="exam-total-es" placeholder="Total de preguntas">
+    <br><br>
+
+    <button onclick="calculateExamScoreSpanish()">Calcular</button>
+
+    <br><br>
+
+    <h2 id="exam-score-result-es"></h2>
+  </div>
+</main>
+
+<script src="../script.js"></script>
+</body>
+</html>
