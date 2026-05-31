@@ -71,29 +71,19 @@ function calculateAverageSpanish() {
 }
 
 function calculatePercentage() {
+  const part = parseFloat(document.getElementById("part").value);
+  const whole = parseFloat(document.getElementById("whole").value);
 
-    const part =
-        parseFloat(document.getElementById("part").value);
+  const result = document.getElementById("percentage-result");
 
-    const whole =
-        parseFloat(document.getElementById("whole").value);
+  if (isNaN(part) || isNaN(whole) || whole === 0) {
+    result.textContent = "Please enter valid numbers.";
+    return;
+  }
 
-    if (!part || !whole) {
+  const percentage = (part / whole) * 100;
 
-        document.getElementById(
-            "percentage-result"
-        ).innerHTML =
-            "Please enter valid numbers.";
-
-        return;
-    }
-
-    const result = (part / whole) * 100;
-
-    document.getElementById(
-        "percentage-result"
-    ).innerHTML =
-        result.toFixed(2) + "%";
+  result.textContent = percentage.toFixed(2) + "%";
 }
 
 function calculateFinalGrade() {
