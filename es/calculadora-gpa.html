@@ -8,7 +8,7 @@
 
   <title>Calculadora GPA - Calculadora GPA Online Gratis</title>
 
-  <meta name="description" content="Calculadora GPA online gratis para estudiantes. Calcula tu GPA usando la escala 4.0 de forma rápida y sencilla.">
+  <meta name="description" content="Calcula tu GPA al instante con esta calculadora GPA online gratis. Herramienta sencilla para estudiantes usando la escala GPA 4.0.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,11 +19,20 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
+
+<nav class="navbar">
+  <a href="../index.html">Inicio</a>
+  <a href="../all-tools.html">Todas las herramientas</a>
+  <a href="../about.html">Acerca de</a>
+  <a href="../contact.html">Contacto</a>
+  <a href="../privacy-policy.html">Privacidad</a>
+</nav>
 
 <header class="header">
   <h1>Calculadora GPA</h1>
-  <p>Calcula tu GPA rápidamente</p>
+  <p>Calcula tu GPA de forma rápida y sencilla.</p>
 </header>
 
 <main class="container">
@@ -31,7 +40,7 @@
     <h2>Introduce tus notas</h2>
 
     <div id="gpa-container-es">
-      <input type="number" class="gpa-input-es" placeholder="Puntos GPA (0-4)">
+      <input type="number" class="gpa-input-es" placeholder="Puntos GPA (0-4)" min="0" max="4" step="0.1">
     </div>
 
     <br>
@@ -44,26 +53,82 @@
     <h2 id="gpa-result-es"></h2>
   </div>
 </main>
+
 <section class="card">
   <h2>Cómo usar la Calculadora GPA</h2>
 
   <p>
-    Introduce los puntos GPA de cada clase y pulsa Calcular GPA.
-    La calculadora calculará automáticamente tu promedio en escala 4.0.
-  </p>
-
-  <p>
-    Esta calculadora GPA gratuita es útil para estudiantes que necesitan
-    conocer su promedio académico de forma rápida y sencilla.
+    Introduce los puntos GPA de cada asignatura o clase y pulsa Calcular GPA.
+    La calculadora calculará automáticamente tu promedio académico usando la
+    escala GPA 4.0.
   </p>
 
   <h2>¿Qué es el GPA?</h2>
 
   <p>
-    GPA significa Grade Point Average. Es una medida académica usada en muchos
-    sistemas educativos para representar el rendimiento medio de un estudiante.
+    GPA significa Grade Point Average. Es una medida académica utilizada en
+    muchos sistemas educativos para representar el rendimiento medio de un
+    estudiante.
+  </p>
+
+  <h2>Fórmula del GPA</h2>
+
+  <p>
+    GPA = Total de puntos GPA ÷ Número de clases
+  </p>
+
+  <h2>Ejemplo de cálculo</h2>
+
+  <p>
+    Si tienes estos puntos GPA:
+  </p>
+
+  <ul>
+    <li>Clase 1: 4.0</li>
+    <li>Clase 2: 3.5</li>
+    <li>Clase 3: 3.0</li>
+    <li>Clase 4: 4.0</li>
+  </ul>
+
+  <p>
+    GPA = (4.0 + 3.5 + 3.0 + 4.0) ÷ 4 = 3.63
+  </p>
+
+  <h2>¿Para qué sirve calcular el GPA?</h2>
+
+  <p>
+    El GPA puede ser importante para solicitudes universitarias, becas,
+    requisitos académicos y seguimiento del rendimiento escolar. Esta
+    calculadora ayuda a conocer tu promedio de forma rápida.
+  </p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Esta calculadora usa la escala 4.0?</h3>
+  <p>
+    Sí. Esta calculadora GPA está pensada para la escala GPA 4.0.
+  </p>
+
+  <h3>¿Puedo usarla para universidad?</h3>
+  <p>
+    Sí. Puedes usarla para clases de instituto, universidad o college.
+  </p>
+
+  <h3>¿Es gratis?</h3>
+  <p>
+    Sí. Todas las herramientas de StudyTools son gratuitas.
+  </p>
+
+  <h2>Herramientas relacionadas</h2>
+
+  <p>
+    <a href="calculadora-ponderada.html">Calculadora ponderada</a> |
+    <a href="calculadora-media.html">Calculadora de media</a> |
+    <a href="calculadora-nota-examen.html">Calculadora de nota de examen</a> |
+    <a href="../en/gpa-calculator.html">GPA Calculator in English</a>
   </p>
 </section>
+
 <script src="../script.js"></script>
 </body>
 </html>
