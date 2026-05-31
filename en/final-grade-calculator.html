@@ -8,7 +8,7 @@
 
   <title>Final Grade Calculator - Calculate the Score You Need</title>
 
-  <meta name="description" content="Free final grade calculator for students. Find out what score you need on your final exam to reach your desired final grade.">
+  <meta name="description" content="Use this free final grade calculator to find out what score you need on your final exam to reach your desired course grade.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,26 +19,30 @@
 
 <body>
 
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../all-tools.html">All Tools</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../privacy-policy.html">Privacy</a>
+</nav>
+
 <header class="header">
   <h1>Final Grade Calculator</h1>
-  <p>Find out what score you need on your final exam</p>
+  <p>Find out what score you need on your final exam.</p>
 </header>
-
-<div class="container">
-  <a href="../index.html">🏠 Home</a>
-</div>
 
 <main class="container">
   <div class="card">
-    <h2>Enter your information</h2>
+    <h2>Enter Your Information</h2>
 
-    <input type="number" id="current-grade" placeholder="Current grade">
+    <input type="number" id="current-grade" placeholder="Current grade (%)">
     <br><br>
 
     <input type="number" id="final-weight" placeholder="Final exam weight (%)">
     <br><br>
 
-    <input type="number" id="desired-grade" placeholder="Desired final grade">
+    <input type="number" id="desired-grade" placeholder="Desired final grade (%)">
     <br><br>
 
     <button onclick="calculateFinalGrade()">Calculate</button>
@@ -48,17 +52,73 @@
     <h2 id="final-grade-result"></h2>
   </div>
 </main>
+
 <section class="card">
   <h2>How to Use the Final Grade Calculator</h2>
 
   <p>
-    Enter your current grade, the weight of your final exam, and your desired final grade.
-    The calculator will show the score you need on the final exam.
+    Enter your current grade, the weight of your final exam and your desired
+    final grade. The calculator will show the score you need on the final exam.
+  </p>
+
+  <h2>Final Grade Formula</h2>
+
+  <p>
+    Required Final Exam Score = (Desired Grade - Current Grade × Current Weight) ÷ Final Exam Weight
+  </p>
+
+  <h2>Example Calculation</h2>
+
+  <p>
+    If your current grade is 80%, your final exam is worth 20% and you want a
+    final course grade of 85%, the calculator finds the score you need on the
+    final exam.
   </p>
 
   <p>
-    This final grade calculator is useful for students who want to know what exam score
-    they need to pass a class or reach a target grade.
+    Required Score = (85 - 80 × 0.80) ÷ 0.20 = 105%
+  </p>
+
+  <p>
+    In this example, you would need 105% on the final exam, which means the
+    desired final grade may not be realistic unless extra credit is available.
+  </p>
+
+  <h2>Why Use a Final Grade Calculator?</h2>
+
+  <p>
+    This calculator helps students understand how much their final exam affects
+    their overall grade. It is useful when planning study time, setting target
+    grades or checking whether a desired grade is still possible.
+  </p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>What does final exam weight mean?</h3>
+  <p>
+    Final exam weight is the percentage of your total course grade that comes
+    from your final exam.
+  </p>
+
+  <h3>Can this calculator tell me if I can still pass?</h3>
+  <p>
+    Yes. Enter the grade you need to pass as your desired final grade and the
+    calculator will show the exam score required.
+  </p>
+
+  <h3>What if the required score is over 100%?</h3>
+  <p>
+    A required score above 100% usually means your target grade is not possible
+    without extra credit or grade adjustments.
+  </p>
+
+  <h2>Related Tools</h2>
+
+  <p>
+    <a href="grade-calculator.html">Grade Calculator</a> |
+    <a href="exam-score-calculator.html">Exam Score Calculator</a> |
+    <a href="gpa-calculator.html">GPA Calculator</a> |
+    <a href="weighted-grade-calculator.html">Weighted Grade Calculator</a>
   </p>
 </section>
 
