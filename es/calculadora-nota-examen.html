@@ -8,7 +8,7 @@
 
   <title>Calculadora de Nota de Examen - Calculadora Gratis Online</title>
 
-  <meta name="description" content="Calculadora gratuita de nota de examen. Calcula tu porcentaje y resultado según las respuestas correctas y el total de preguntas.">
+  <meta name="description" content="Calcula tu nota de examen y porcentaje de aciertos al instante. Herramienta gratuita para estudiantes, profesores y pruebas académicas.">
 
   <meta name="robots" content="index,follow">
 
@@ -19,21 +19,33 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
+
+<nav class="navbar">
+  <a href="../index.html">Inicio</a>
+  <a href="../all-tools.html">Todas las herramientas</a>
+  <a href="../about.html">Acerca de</a>
+  <a href="../contact.html">Contacto</a>
+  <a href="../privacy-policy.html">Privacidad</a>
+</nav>
 
 <header class="header">
   <h1>Calculadora de Nota de Examen</h1>
-  <p>Calcula tu porcentaje del examen al instante</p>
+  <p>Calcula tu porcentaje de aciertos al instante.</p>
 </header>
 
 <main class="container">
   <div class="card">
+
     <h2>Introduce los resultados</h2>
 
     <input type="number" id="exam-correct-es" placeholder="Respuestas correctas">
+
     <br><br>
 
     <input type="number" id="exam-total-es" placeholder="Total de preguntas">
+
     <br><br>
 
     <button onclick="calculateExamScoreSpanish()">Calcular</button>
@@ -41,28 +53,80 @@
     <br><br>
 
     <h2 id="exam-score-result-es"></h2>
+
   </div>
 </main>
+
 <section class="card">
+
   <h2>Cómo usar la Calculadora de Nota de Examen</h2>
 
   <p>
     Introduce el número de respuestas correctas y el número total de preguntas.
-    La calculadora mostrará automáticamente tu porcentaje de aciertos.
+    La calculadora calculará automáticamente tu porcentaje de aciertos.
+  </p>
+
+  <h2>Fórmula de la nota de examen</h2>
+
+  <p>
+    Nota (%) = (Respuestas correctas ÷ Total de preguntas) × 100
+  </p>
+
+  <h2>Ejemplo de cálculo</h2>
+
+  <p>
+    Si has respondido correctamente 42 preguntas de un examen de 50 preguntas:
   </p>
 
   <p>
-    Esta herramienta es útil para estudiantes y profesores que desean conocer
-    rápidamente la nota obtenida en un examen o prueba.
+    (42 ÷ 50) × 100 = 84%
   </p>
-
-  <h2>Fórmula de la Nota de Examen</h2>
 
   <p>
-    La nota se calcula dividiendo las respuestas correctas entre el total de
-    preguntas y multiplicando el resultado por 100.
+    Tu nota de examen sería del 84%.
   </p>
+
+  <h2>¿Para qué sirve esta calculadora?</h2>
+
+  <p>
+    Esta herramienta es útil para estudiantes que quieren conocer rápidamente
+    su resultado después de un examen, prueba o cuestionario. También puede
+    ser utilizada por profesores para calcular porcentajes de forma rápida.
+  </p>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Cómo se calcula el porcentaje de un examen?</h3>
+
+  <p>
+    Se divide el número de respuestas correctas entre el total de preguntas y
+    se multiplica el resultado por 100.
+  </p>
+
+  <h3>¿Sirve para cuestionarios y tests?</h3>
+
+  <p>
+    Sí. Funciona para exámenes, cuestionarios, pruebas rápidas y evaluaciones.
+  </p>
+
+  <h3>¿Es gratuita?</h3>
+
+  <p>
+    Sí. Todas las herramientas de StudyTools son completamente gratuitas.
+  </p>
+
+  <h2>Herramientas relacionadas</h2>
+
+  <p>
+    <a href="calculadora-media.html">Calculadora de Media</a> |
+    <a href="calculadora-gpa.html">Calculadora GPA</a> |
+    <a href="calculadora-ponderada.html">Calculadora Ponderada</a> |
+    <a href="calculadora-horas-estudio.html">Calculadora de Horas de Estudio</a>
+  </p>
+
 </section>
+
 <script src="../script.js"></script>
+
 </body>
 </html>
