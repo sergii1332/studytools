@@ -8,7 +8,7 @@
 
   <title>Study Hours Calculator - Free Weekly Study Planner</title>
 
-  <meta name="description" content="Free study hours calculator. Estimate how many hours you should study each week based on your subjects and workload.">
+  <meta name="description" content="Estimate your weekly study hours with this free study hours calculator. Plan your subjects, workload and study schedule more effectively.">
 
   <meta name="robots" content="index,follow">
 
@@ -16,61 +16,124 @@
 
   <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
+<nav class="navbar">
+  <a href="../index.html">Home</a>
+  <a href="../all-tools.html">All Tools</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../privacy-policy.html">Privacy</a>
+</nav>
+
 <header class="header">
-<h1>Study Hours Calculator</h1>
-<p>Estimate your weekly study hours</p>
+  <h1>Study Hours Calculator</h1>
+  <p>Estimate your weekly study hours and plan your workload.</p>
 </header>
 
 <main class="container">
 
-<div class="card">
+  <div class="card">
 
-<h2>Subjects</h2>
+    <h2>Enter Your Study Plan</h2>
 
-<input type="number" id="subjects" placeholder="Number of subjects">
+    <input type="number" id="subjects" placeholder="Number of subjects">
 
-<br><br>
+    <br><br>
 
-<h2>Hours per subject per week</h2>
+    <input type="number" id="hours" placeholder="Hours per subject per week">
 
-<input type="number" id="hours" placeholder="Hours">
+    <br><br>
 
-<br><br>
+    <button onclick="calculateStudyHours()">Calculate</button>
 
-<button onclick="calculateStudyHours()">
-Calculate
-</button>
+    <br><br>
 
-<br><br>
+    <h2 id="study-result"></h2>
 
-<h2 id="study-result"></h2>
-
-</div>
+  </div>
 
 </main>
+
 <section class="card">
+
   <h2>How to Use the Study Hours Calculator</h2>
 
   <p>
-    Enter the number of subjects you are taking and the estimated study hours
-    needed for each subject every week. The calculator will estimate your total
-    weekly study time.
+    Enter the number of subjects you are taking and the estimated number of
+    study hours needed for each subject every week. The calculator will estimate
+    your total weekly study time.
+  </p>
+
+  <h2>Study Hours Formula</h2>
+
+  <p>
+    Total Weekly Study Hours = Number of Subjects × Hours per Subject
+  </p>
+
+  <h2>Example Calculation</h2>
+
+  <p>
+    If you are taking 5 subjects and plan to study 3 hours per subject each
+    week:
   </p>
 
   <p>
-    This free study hours calculator helps students organize their schedules,
-    manage workloads and improve time management.
+    5 × 3 = 15 study hours per week
   </p>
 
   <h2>Why Study Planning Matters</h2>
 
   <p>
     Creating a consistent study schedule can improve academic performance,
-    reduce stress and help students stay on track with assignments and exams.
+    reduce stress and help students stay on track with assignments, quizzes and
+    exams. Planning study hours also helps students balance school, work,
+    sports and personal responsibilities.
   </p>
+
+  <h2>Tips for Planning Study Time</h2>
+
+  <ul>
+    <li>Break study time into smaller sessions.</li>
+    <li>Study difficult subjects earlier in the week.</li>
+    <li>Review notes regularly instead of waiting until the last minute.</li>
+    <li>Use short breaks to stay focused and avoid burnout.</li>
+  </ul>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>How many hours should I study each week?</h3>
+
+  <p>
+    The right number depends on your course difficulty, exam schedule and
+    personal goals. Many students study more hours for harder subjects.
+  </p>
+
+  <h3>Can this calculator help with exam planning?</h3>
+
+  <p>
+    Yes. You can use it to estimate weekly study time before exams, quizzes or
+    major assignments.
+  </p>
+
+  <h3>Is this study hours calculator free?</h3>
+
+  <p>
+    Yes. All StudyTools calculators are free to use.
+  </p>
+
+  <h2>Related Tools</h2>
+
+  <p>
+    <a href="grade-calculator.html">Grade Calculator</a> |
+    <a href="gpa-calculator.html">GPA Calculator</a> |
+    <a href="final-grade-calculator.html">Final Grade Calculator</a> |
+    <a href="exam-score-calculator.html">Exam Score Calculator</a>
+  </p>
+
 </section>
+
 <script src="../script.js"></script>
 
 </body>
