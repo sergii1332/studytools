@@ -414,3 +414,42 @@ function calculateAverageToolSpanish() {
   result.textContent =
     "Media: " + (total / count).toFixed(2);
 }
+
+function calculateStudyHours() {
+
+  const subjects =
+    parseFloat(document.getElementById("subjects").value);
+
+  const hours =
+    parseFloat(document.getElementById("hours").value);
+
+  const result =
+    document.getElementById("study-result");
+
+  if (
+    isNaN(subjects) ||
+    isNaN(hours)
+  ) {
+    result.textContent =
+      "Please enter valid values.";
+    return;
+  }
+
+  result.textContent =
+    "Recommended weekly study hours: " +
+    (subjects * hours).toFixed(0);
+}
+
+function calculateStudyHoursSpanish() {
+  const subjects = parseFloat(document.getElementById("subjects-es").value);
+  const hours = parseFloat(document.getElementById("hours-es").value);
+  const result = document.getElementById("study-result-es");
+
+  if (isNaN(subjects) || isNaN(hours)) {
+    result.textContent = "Por favor, introduce valores válidos.";
+    return;
+  }
+
+  result.textContent =
+    "Horas semanales recomendadas: " + (subjects * hours).toFixed(0);
+}
