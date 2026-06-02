@@ -216,6 +216,8 @@ button:hover {
   color: white;
 }
 
+/* HAMBURGER MENU */
+
 .navbar {
   position: relative;
 }
@@ -223,24 +225,28 @@ button:hover {
 .menu-toggle {
   background: white;
   border: 2px solid #ddd;
-  font-size: 26px;
+  font-size: 28px;
   cursor: pointer;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 8px;
   color: #111;
+}
+
+.menu-toggle:hover {
+  background: #f3f4f6;
 }
 
 .nav-links {
   display: none;
   position: absolute;
-  top: 70px;
-  right: 25px;
+  top: 65px;
+  right: 20px;
   background: white;
-  min-width: 180px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.18);
-  border-radius: 10px;
-  z-index: 1000;
-  padding: 10px 0;
+  min-width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 9999;
 }
 
 .nav-links.show {
@@ -250,10 +256,13 @@ button:hover {
 .nav-links a {
   display: block;
   padding: 14px 20px;
-  color: #111;
   text-decoration: none;
+  color: #222;
+  margin: 0;
+  font-weight: 600;
 }
 
 .nav-links a:hover {
   background: #f3f4f6;
+  color: #1e3a8a;
 }
