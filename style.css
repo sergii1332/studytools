@@ -215,3 +215,45 @@ button:hover {
   opacity: 0.9;
   color: white;
 }
+
+.navbar {
+  position: relative;
+}
+
+.menu-toggle {
+  background: white;
+  border: 2px solid #ddd;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #111;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 25px;
+  background: white;
+  min-width: 180px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.18);
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+.nav-links.show {
+  display: block;
+}
+
+.nav-links a {
+  display: block;
+  padding: 14px 20px;
+  color: #111;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background: #f3f4f6;
+}
