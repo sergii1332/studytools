@@ -223,6 +223,7 @@ button:hover {
 }
 
 .menu-toggle {
+  display: block;
   background: white;
   border: 2px solid #ddd;
   font-size: 28px;
@@ -230,10 +231,6 @@ button:hover {
   padding: 6px 14px;
   border-radius: 8px;
   color: #111;
-}
-
-.menu-toggle:hover {
-  background: #f3f4f6;
 }
 
 .nav-links {
@@ -256,10 +253,8 @@ button:hover {
 .nav-links a {
   display: block;
   padding: 14px 20px;
-  text-decoration: none;
-  color: #222;
   margin: 0;
-  font-weight: 600;
+  color: #222;
 }
 
 .nav-links a:hover {

@@ -443,3 +443,12 @@ function calculateStudyHoursSpanish() {
   result.textContent =
     "Horas semanales recomendadas: " + (subjects * hours).toFixed(0);
 }
+
+
+function toggleMenu() {
+  const menu = document.getElementById("navLinks");
+
+  if (menu) {
+    menu.classList.toggle("show");
+  }
+}
